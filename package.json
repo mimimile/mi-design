@@ -1,0 +1,32 @@
+{
+  "name": "mui",
+  "version": "0.0.1",
+  "description": "A Component Library for Vue.js.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimimi1227/Mui.git"
+  },
+  "keywords": [
+    "vue",
+    "components"
+  ],
+  "author": "mimimi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimimi1227/Mui/issues"
+  },
+  "homepage": "https://github.com/mimimi1227/Mui#readme",
+  "peerDependencies": {
+    "vue": "^2.3.4"
+  },
+  "devDependencies": {
+    "vue": "^2.3.4"
+  }
+}
