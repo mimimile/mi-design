@@ -1,0 +1,70 @@
+@btn-prefix-cls: ~"@{css-prefix}btn";
+
+.@{btn-prefix-cls} {
+    .btn;
+    .btn-default;
+
+    &-long{
+        width: 100%;
+    }
+
+    &-primary {
+        .btn-primary;
+
+        .@{btn-prefix-cls}-group:not(.@{btn-prefix-cls}-group-vertical) &:not(:first-child):not(:last-child) {
+            border-right-color: @btn-group-border;
+            border-left-color: @btn-group-border;
+        }
+
+        .@{btn-prefix-cls}-group:not(.@{btn-prefix-cls}-group-vertical) &:first-child {
+            &:not(:last-child) {
+                border-right-color: @btn-group-border;
+                &[disabled] {
+                    border-right-color: @btn-default-border;
+                }
+            }
+        }
+
+        .@{btn-prefix-cls}-group:not(.@{btn-prefix-cls}-group-vertical) &:last-child:not(:first-child),
+        .@{btn-prefix-cls}-group:not(.@{btn-prefix-cls}-group-vertical) & + .@{btn-prefix-cls} {
+            border-left-color: @btn-group-border;
+            &[disabled] {
+                border-left-color: @btn-default-border;
+            }
+        }
+
+        .@{btn-prefix-cls}-group-vertical &:not(:first-child):not(:last-child) {
+            border-top-color: @btn-group-border;
+            border-bottom-color: @btn-group-border;
+        }
+
+        .@{btn-prefix-cls}-group-vertical &:first-child {
+            &:not(:last-child) {
+                border-bottom-color: @btn-group-border;
+                &[disabled] {
+                    border-top-color: @btn-default-border;
+                }
+            }
+        }
+
+        .@{btn-prefix-cls}-group-vertical &:last-child:not(:first-child),
+        .@{btn-prefix-cls}-group-vertical & + .@{btn-prefix-cls} {
+            border-top-color: @btn-group-border;
+            &[disabled] {
+                border-bottom-color: @btn-default-border;
+            }
+        }
+    }
+
+    &-ghost {
+        .btn-ghost;
+    }
+
+    &-dashed{
+        .btn-dashed;
+    }
+
+    &-text{
+        .btn-text;
+    }
+}

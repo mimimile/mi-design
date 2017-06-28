@@ -1,17 +1,21 @@
+<style lang="less">
+  @import "../packages/theme-default/index.less";
+</style>
+
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <hello></hello>
+    <index></index>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import index from './components/index'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    index
   }
 }
 </script>
