@@ -1,13 +1,17 @@
 <template>
-  <div class="hello">
+  <div class="index">
     <h1>{{ msg }}</h1>
-    <mi-button>hahah</mi-button>
+    <mi-button>我是按鈕</mi-button>
+    <mi-button type="primary">我是按鈕</mi-button>
+    <mi-button type="ghost">我是按鈕</mi-button>
+    <mi-button type="dashed">我是按鈕</mi-button>
+    <mi-button type="text">我是按鈕</mi-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'index',
   data () {
     return {
       msg: 'Welcome to Mui'

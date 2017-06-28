@@ -1,9 +1,17 @@
 <template>
-    <button :disabled="disabled" class="mi-button"
+    <button :disabled="disabled" class="mi-btn"
         @click="handleClick"
         :autofocus="autofocus"
         :type="nativeType"
-
+        :class="[
+            type ? 'mi-btn-' + type : '',
+            size ? 'mi-btn-' + size : '',
+            {
+                'is-disabled' : disabled,
+                'is-loading' : loading,
+                'is-plain' : plain
+            }
+        ]"
     >
         <span v-if="$slots.default"><slot></slot></span>
     </button>
@@ -14,7 +22,7 @@
         name: 'MiButton',
 
         props: {
-            types: {
+            type: {
                 type: String,
                 default: 'default'
             },

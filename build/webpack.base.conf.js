@@ -48,6 +48,30 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'autoprefixer-loader'
+        ]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader?sourceMap'
+        ]
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
