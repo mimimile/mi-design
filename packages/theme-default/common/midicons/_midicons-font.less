@@ -1,0 +1,28 @@
+@font-face {
+  font-family: @midicons-font-family;
+  src: url('@{midicons-font-path}/fontawesome.eot?96063857');
+  src: url('@{midicons-font-path}/fontawesome.eot?96063857#iefix') format('embedded-opentype'),
+       url('@{midicons-font-path}/fontawesome.ttf?96063857') format('truetype'),
+       url('@{midicons-font-path}/fontawesome.woff?96063857') format('woff'),
+       url('@{midicons-font-path}/fontawesome.svg?96063857#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mi-icon() {
+    display: inline-block;
+    font-family: @midicons-font-family;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mi-icon {
+    .mi-icon();
+}

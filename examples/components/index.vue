@@ -1,11 +1,13 @@
 <template>
   <div class="index">
     <h1>{{ msg }}</h1>
-    <mi-button>我是按鈕</mi-button>
-    <mi-button type="primary">我是按鈕</mi-button>
-    <mi-button type="ghost">我是按鈕</mi-button>
-    <mi-button type="dashed">我是按鈕</mi-button>
-    <mi-button type="text">我是按鈕</mi-button>
+    <nav>
+      组件列表
+      <ul>
+        <li><router-link to="/button">Button</router-link></li>
+        <li><router-link to="/grid">Grid</router-link></li>
+      </ul>
+    </nav>
   </div>
 </template>
 
@@ -22,21 +24,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+nav {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
-
 ul {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 li {
   display: inline-block;
-  margin: 0 10px;
+  font-size: 25px;
 }
-
-a {
-  color: #42b983;
+li + li {
+  border-left: solid 1px #bbb;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 </style>
